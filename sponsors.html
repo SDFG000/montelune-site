@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sponsors – C. A. Montelune Ballestro</title>
+
+<style>
+
+/* ===========================
+   DARK CINEMATIC THEME
+   =========================== */
+
+:root {
+  --red: #d81f26;
+  --blue: #003f7f;
+  --gold: #d4af37;
+  --white: #ffffff;
+  --text: #f5f5f5;
+  --muted: #a9b2c7;
+}
+
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(216,31,38,0.18), transparent 60%),
+    radial-gradient(circle at 80% 0%, rgba(0,63,127,0.22), transparent 60%),
+    linear-gradient(180deg, #050711 0%, #020308 100%);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(5,7,17,0.72);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(212,175,55,0.35);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.45);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav-logo {
+  width: 48px;
+}
+
+.nav-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.nav-title span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--white);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--red));
+  transition: 0.25s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* SECTION */
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-letter-spacing: 0.18em;
+  margin-bottom: 1rem;
+}
+
+.section-sub {
+  color: var(--muted);
+  max-width: 420px;
+  margin-bottom: 2rem;
+}
+
+/* SPONSOR CARDS */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+.sponsor-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.4rem;
+  backdrop-filter: blur(14px);
+  transition: 0.25s;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.45),
+    0 0 12px rgba(212,175,55,0.25);
+}
+
+.sponsor-card h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.5rem;
+}
+
+.sponsor-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  background: #040610;
+  border-top: 1px solid rgba(212,175,55,0.25);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="nav-left">
+      <img src="images/logo.png" class="nav-logo">
+      <div class="nav-title">C. A. <span>Montelune Ballestro</span></div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="fixtures.html">Fixtures</a>
+      <a href="news.html">News</a>
+      <a href="sponsors.html" class="active">Sponsors</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Official Sponsors</h1>
+    <p class="section-sub">Partners who support Montelune Ballestro.</p>
+
+    <div class="sponsor-grid">
+
+      <div class="sponsor-card">
+        <h3>Valorun®</h3>
+        <p>Main shirt sponsor. Performance technology powering every match.</p>
+      </div>
+
+      <div class="sponsor-card">
+        <h3>UNICEF</h3>
+        <p>Global partner supporting children and communities.</p>
+      </div>
+
+      <div class="sponsor-card">
+        <h3>adidas</h3>
+        <p>Official technical supplier for match and training kits.</p>
+      </div>
+
+      <div class="sponsor-card">
+        <h3>Jefes</h3>
+        <p>Premium hospitality partner at Estadio Ballestro.</p>
+      </div>
+
+      <div class="sponsor-card">
+        <h3>Sinario®</h3>
+        <p>Innovation partner focused on data and fan experience.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © C. A. Montelune Ballestro · 1931 – Present
+  </div>
+</footer>
+
+</body>
+</html>
